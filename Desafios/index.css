@@ -1,0 +1,10 @@
+#imagem{
+    background-color: transparent;
+    width: 20px;
+    height: auto;
+}
+body{
+    background-color: black;
+    color: white ;
+    text-align: center;
+}
