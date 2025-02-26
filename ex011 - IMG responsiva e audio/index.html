@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagens dinâmicas</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador</p>
+
+    <picture>
+        <!--Colocar 50px acima do tamanho da img : ex: img= 700px -max width= 750px-->
+        <source media="(max-width: 750px )" srcset="imagens/imgP.jpeg" type="image/jpeg">
+        <source media="(max-width: 1050px)" srcset="imagens/imgM.jpeg" type="image/jpeg">
+        <img src="imagens/imgG.jpeg" alt="Imagem flexível">
+    </picture>
+
+    <h1>Reproduzindo aúdio</h1>
+
+    <!--NORMAL-->
+    <p>Vamos aprender a reproduzir aúdio em HTML5</p>
+    <audio src="WhatsApp Audio 2025-02-05 at 21.47.40.mpeg" autoplay controls></audio>
+    
+    <audio preload="metadata" autoplay controls>
+        <source src="WhatsApp Audio 2025-02-05 at 21.47.40.mpeg" type="audio/mpeg">
+        <source src="midia/guanacast-33.ogg" type="audio/ogg">
+        <source src="midia/guanacast-33.mp3" type="audio/wav">
+
+        <!--O códigp acima tenta abrir o aúdio no formato que o navegador do usúario suporta, caso ele não consiga com nenhum dos aquivos, ele mostra a mensagem abaixo:-->
+
+        <p>Infelizmente seu navegador não consegue reproduzir aúdio <a href="WhatsApp Audio 2025-02-05 at 21.47.40.mpeg">Clique aqui</a> para baixar o arquivo mp3</p>
+
+    </audio>
+    
+</body>
+</html>
